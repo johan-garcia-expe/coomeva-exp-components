@@ -11,6 +11,13 @@
     "vtex.css-handles": "0.x",
     "vtex.render-runtime": "8.x"
   },
-  "policies": [],
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "email": "jose@experimentality.co"
+    },
+    "type": "free",
+    "availableCountries": ["*"]
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
