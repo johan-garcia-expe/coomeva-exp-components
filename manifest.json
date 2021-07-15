@@ -1,6 +1,6 @@
 {
-  "vendor": "CHANGE_ME",
-  "name": "CHANGE_ME",
+  "vendor": "experimentality",
+  "name": "components",
   "version": "0.1.0",
   "builders": {
     "docs": "0.x",

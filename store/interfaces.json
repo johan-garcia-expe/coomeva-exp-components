@@ -1,5 +1,5 @@
 {
-  "greeting-block-name": {
-    "component": "Greeting"
+  "container-layout": {
+    "component": "ContainerLayout"
   }
 }
