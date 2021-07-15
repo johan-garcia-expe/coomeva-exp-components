@@ -1,7 +1,5 @@
 {
   "name": "exp-components-vtexio",
-  "version": "0.1.0",
-  "scripts": {},
   "dependencies": {
     "apollo-client": "^2.6.8",
     "react": "^16.12.0",

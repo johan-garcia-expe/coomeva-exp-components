@@ -1,5 +1,6 @@
 {
   "container-layout": {
-    "component": "ContainerLayout"
+    "component": "ContainerLayout",
+    "composition": "children"
   }
 }
