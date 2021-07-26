@@ -1,5 +1,14 @@
 {
-  "greeting-block-name": {
-    "component": "Greeting"
+  "container-layout": {
+    "component": "ContainerLayout",
+    "composition": "children"
+  },
+
+  "card-layout": {
+    "component": "CardLayout"
+  },
+
+  "highlight-content": {
+    "component": "HighlightContent"
   }
 }

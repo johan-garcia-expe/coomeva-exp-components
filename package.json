@@ -1,10 +1,9 @@
 {
-  "version": "0.1.0",
-  "name": "CHANGE_ME",
+  "name": "exp-components-vtexio",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "lint": "eslint . --fix --ext js,jsx,ts,tsx",
+    "lint": "eslint . --ext js,jsx,ts,tsx",
     "format": "prettier --write '**/*.{ts,tsx,js,jsx,json}'"
   },
   "devDependencies": {
@@ -15,6 +14,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "^2.3.2",
