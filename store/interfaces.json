@@ -10,5 +10,9 @@
 
   "highlight-content": {
     "component": "HighlightContent"
+  },
+
+  "responsive-image": {
+    "component": "ResponsiveImage"
   }
 }
