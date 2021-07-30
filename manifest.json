@@ -1,7 +1,7 @@
 {
   "vendor": "experimentality",
   "name": "components",
-  "version": "1.2.1",
+  "version": "1.3.1",
   "builders": {
     "docs": "0.x",
     "react": "3.x",
@@ -20,9 +20,7 @@
     },
     "type": "free",
     "free": true,
-    "availableCountries": [
-      "*"
-    ]
+    "availableCountries": ["*"]
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
