@@ -7,6 +7,7 @@ type HighlightContentProps = {
   items: CardLayoutProps[];
   sliderMode: boolean;
   sliderProps: any;
+  classes: string;
 };
 
 const CSS_HANDLES = ['highlightContent'];
@@ -15,11 +16,12 @@ const HighlightContent = ({
   items,
   sliderMode,
   sliderProps,
+  classes,
 }: HighlightContentProps) => {
   const handles = useCssHandles(CSS_HANDLES);
 
   return items ? (
-    <section className={handles.highlightContent}>
+    <section className={`${handles.highlightContent} ${classes || ''}`}>
       {sliderMode ? (
         // eslint-disable-next-line react/jsx-props-no-spreading
         <SliderLayout {...sliderProps}>
