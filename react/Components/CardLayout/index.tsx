@@ -24,7 +24,7 @@ const CardLayout = ({ image, secundaryImage, text, link }: CardLayoutProps) => {
   return (
     <article className={handles.cardLayout}>
       {link ? (
-        <Link to={link} className={`${handles.cardLayout__content} db`}>
+        <Link to={link} className={`${handles.cardLayout__content} db link`}>
           {image && (
             <img
               className={`${handles.cardLayout__image} db`}
