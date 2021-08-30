@@ -79,16 +79,10 @@ HighlightContent.schema = {
           text: {
             title: 'Texto para la card',
             type: 'string',
-            widget: {
-              'ui:widget': 'image-uploader',
-            },
           },
           link: {
             title: 'Link',
             type: 'string',
-            widget: {
-              'ui:widget': 'image-uploader',
-            },
           },
         },
       },
