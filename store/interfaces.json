@@ -14,5 +14,9 @@
 
   "responsive-image": {
     "component": "ResponsiveImage"
+  },
+
+  "pum": {
+    "component": "Pum"
   }
 }
