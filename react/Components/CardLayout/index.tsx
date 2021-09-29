@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'vtex.render-runtime';
-import { useCssHandles } from 'vtex.css-handles';
-import { index as RichText } from 'vtex.rich-text';
+import React from 'react'
+import { Link } from 'vtex.render-runtime'
+import { useCssHandles } from 'vtex.css-handles'
+import { index as RichText } from 'vtex.rich-text'
 
 export type CardLayoutProps = {
-  image: string;
-  secundaryImage: string;
-  text: string;
-  link: string;
-};
+  image: string
+  secundaryImage: string
+  text: string
+  link: string
+}
 
 const CSS_HANDLES = [
   'cardLayout',
@@ -16,10 +16,10 @@ const CSS_HANDLES = [
   'cardLayout__image',
   'cardLayout__secundary_image',
   'cardLayout__text',
-];
+]
 
 const CardLayout = ({ image, secundaryImage, text, link }: CardLayoutProps) => {
-  const handles = useCssHandles(CSS_HANDLES);
+  const handles = useCssHandles(CSS_HANDLES)
 
   return (
     <article className={handles.cardLayout}>
@@ -61,8 +61,8 @@ const CardLayout = ({ image, secundaryImage, text, link }: CardLayoutProps) => {
         </div>
       )}
     </article>
-  );
-};
+  )
+}
 
 CardLayout.schema = {
   title: 'Card informativa',
@@ -97,6 +97,6 @@ CardLayout.schema = {
       },
     },
   },
-};
+}
 
-export default CardLayout;
+export default CardLayout

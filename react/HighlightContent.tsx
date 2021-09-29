@@ -1,3 +1,3 @@
-import HighlightContent from './Components/HighlightContent';
+import HighlightContent from './Components/HighlightContent'
 
-export default HighlightContent;
+export default HighlightContent

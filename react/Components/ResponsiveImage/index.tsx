@@ -1,21 +1,21 @@
-import React from 'react';
-import { Link } from 'vtex.render-runtime';
-import { useCssHandles } from 'vtex.css-handles';
+import React from 'react'
+import { Link } from 'vtex.render-runtime'
+import { useCssHandles } from 'vtex.css-handles'
 
 type ResponsiveImageProps = {
-  mobileImage: string;
-  desktopImage: string;
-  breakpoint: string;
-  link: string;
-  external: boolean;
-  alt: string;
-};
+  mobileImage: string
+  desktopImage: string
+  breakpoint: string
+  link: string
+  external: boolean
+  alt: string
+}
 
 const CSS_HANDLES = [
   'responsiveImageContainer',
   'responsiveImageLink',
   'responsiveImage',
-];
+]
 
 const ResponsiveImage = ({
   mobileImage,
@@ -25,7 +25,7 @@ const ResponsiveImage = ({
   external,
   alt = '',
 }: ResponsiveImageProps) => {
-  const handles = useCssHandles(CSS_HANDLES);
+  const handles = useCssHandles(CSS_HANDLES)
 
   return link ? (
     <div className={handles.responsiveImageContainer}>
@@ -75,8 +75,8 @@ const ResponsiveImage = ({
         />
       </picture>
     </div>
-  );
-};
+  )
+}
 
 ResponsiveImage.schema = {
   title: 'Imagen responsive',
@@ -109,6 +109,6 @@ ResponsiveImage.schema = {
       type: 'string',
     },
   },
-};
+}
 
-export default ResponsiveImage;
+export default ResponsiveImage
