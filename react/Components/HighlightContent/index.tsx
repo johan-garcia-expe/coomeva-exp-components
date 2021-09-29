@@ -1,16 +1,18 @@
-import React from 'react';
-import { SliderLayout } from 'vtex.slider-layout';
-import { useCssHandles } from 'vtex.css-handles';
-import CardLayout, { CardLayoutProps } from '../CardLayout';
+import React from 'react'
+import { SliderLayout } from 'vtex.slider-layout'
+import { useCssHandles } from 'vtex.css-handles'
+
+import CardLayout from '../CardLayout'
+import type { CardLayoutProps } from '../CardLayout'
 
 type HighlightContentProps = {
-  items: CardLayoutProps[];
-  sliderMode: boolean;
-  sliderProps: any;
-  classes: string;
-};
+  items: CardLayoutProps[]
+  sliderMode: boolean
+  sliderProps: any
+  classes: string
+}
 
-const CSS_HANDLES = ['highlightContent'];
+const CSS_HANDLES = ['highlightContent']
 
 const HighlightContent = ({
   items,
@@ -18,12 +20,11 @@ const HighlightContent = ({
   sliderProps,
   classes,
 }: HighlightContentProps) => {
-  const handles = useCssHandles(CSS_HANDLES);
+  const handles = useCssHandles(CSS_HANDLES)
 
   return items ? (
     <section className={`${handles.highlightContent} ${classes || ''}`}>
       {sliderMode ? (
-        // eslint-disable-next-line react/jsx-props-no-spreading
         <SliderLayout {...sliderProps}>
           {items.map((item, index) => (
             <CardLayout
@@ -31,7 +32,6 @@ const HighlightContent = ({
               secundaryImage={item.secundaryImage}
               text={item.text}
               link={item.link}
-              // eslint-disable-next-line react/no-array-index-key
               key={`highlightContent-${index}`}
             />
           ))}
@@ -43,14 +43,13 @@ const HighlightContent = ({
             secundaryImage={item.secundaryImage}
             text={item.text}
             link={item.link}
-            // eslint-disable-next-line react/no-array-index-key
             key={`highlightContent-${index}`}
           />
         ))
       )}
     </section>
-  ) : null;
-};
+  ) : null
+}
 
 HighlightContent.schema = {
   title: 'Slider de contenido destacado',
@@ -88,6 +87,6 @@ HighlightContent.schema = {
       },
     },
   },
-};
+}
 
-export default HighlightContent;
+export default HighlightContent
