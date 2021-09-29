@@ -1,3 +1,3 @@
-import CardLayout from './Components/CardLayout';
+import CardLayout from './Components/CardLayout'
 
-export default CardLayout;
+export default CardLayout

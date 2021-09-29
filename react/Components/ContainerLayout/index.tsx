@@ -1,14 +1,14 @@
-import React from 'react';
-import { useCssHandles } from 'vtex.css-handles';
+import React from 'react'
+import { useCssHandles } from 'vtex.css-handles'
 
 type ContainerLayoutProps = {
-  active: boolean;
-  type: 'div' | 'section';
-  classes: string;
-  children: React.ReactNode;
-};
+  active: boolean
+  type: 'div' | 'section'
+  classes: string
+  children: React.ReactNode
+}
 
-const CSS_HANDLES = ['containerLayout'];
+const CSS_HANDLES = ['containerLayout']
 
 const ContainerLayout = ({
   active = true,
@@ -16,7 +16,7 @@ const ContainerLayout = ({
   classes,
   children,
 }: ContainerLayoutProps) => {
-  const handles = useCssHandles(CSS_HANDLES);
+  const handles = useCssHandles(CSS_HANDLES)
 
   return (
     <>
@@ -31,8 +31,8 @@ const ContainerLayout = ({
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
 ContainerLayout.schema = {
   title: 'Contenedor de sección',
@@ -43,6 +43,6 @@ ContainerLayout.schema = {
       type: 'boolean',
     },
   },
-};
+}
 
-export default ContainerLayout;
+export default ContainerLayout
