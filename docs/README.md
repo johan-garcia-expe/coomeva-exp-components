@@ -1,6 +1,5 @@
-📢 Use this project, [contribute](https://github.com/{OrganizationName}/{AppName}) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
 
-# APP NAME
+# Experimentality Components
 
 <!-- DOCS-IGNORE:start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -8,18 +7,17 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-Under the app's name, you should explain the topic, giving a **brief description** of its **functionality** in a store when installed.
-
-Next, **add media** (either an image of a GIF) with the rendered components, so that users can better understand how the app works in practice. 
-
-![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
+This Repo contains the custom apps that was develop to can reuse in differents projectst. The correct usage of this apps is duplicate the necessary apps in another project with the same name of accout as its vendor name.  If you use all apps you cand duplicate all repository.
 
 ## Configuration 
 
-In this section, you first must **add the primary instructions** that will allow users to use the app's blocks in their store, such as:
 
-1. Adding the app as a theme dependency in the `manifest.json` file;
-2. Declaring the app's main block in a given theme template or inside another block from the theme.
+1. Create a new repo or duplicated repo if you need all custom apps
+2. In new repo, by convention, saves its vendor in `manifest.json` file like `"vendor":"ACCOUNT-NAME"` and its name like `"name":"components"` 
+4. Duplicate components code from this repository
+5. Create at the React folder first level a .tsx file that have like name the classname of component
+6. Import and export by default the class name
+7. Create the interface in the store folder to export the component
 
 Remember to add a table with all blocks exported by the app and their descriptions. You can verify an example of it on the [Search Result documentation](https://vtex.io/docs/components/all/vtex.search-result@3.56.1/). 
 
