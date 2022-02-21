@@ -19,6 +19,13 @@ This Repo contains the custom apps that was develop to can reuse in differents p
 6. Import and export by default the class name
 7. Create the interface in the store folder to export the component
 
+## Currents availables custom Apps
+- container-layout
+- card-layout
+- highlight-content
+- responsive-image
+- pum
+
 Remember to add a table with all blocks exported by the app and their descriptions. You can verify an example of it on the [Search Result documentation](https://vtex.io/docs/components/all/vtex.search-result@3.56.1/). 
 
 Next, add the **props table** containing your block's props. 
