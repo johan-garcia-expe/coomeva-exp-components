@@ -35,7 +35,6 @@ const ContainerLayout = ({
 }
 
 ContainerLayout.schema = {
-  title: 'Contenedor de sección',
   type: 'object',
   properties: {
     active: {
