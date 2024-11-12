@@ -1,7 +1,7 @@
 {
-  "vendor": "experimentality",
-  "name": "components",
-  "version": "1.4.0",
+  "vendor": "coomeva",
+  "name": "exp-components",
+  "version": "0.0.1",
   "builders": {
     "docs": "0.x",
     "react": "3.x",
@@ -11,17 +11,9 @@
     "vtex.rich-text": "0.x",
     "vtex.slider-layout": "0.x",
     "vtex.css-handles": "0.x",
+    "vtex.device-detector": "0.x",
     "vtex.render-runtime": "8.x",
     "vtex.product-context": "0.x"
-  },
-  "billingOptions": {
-    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
-    "support": {
-      "email": "jose@experimentality.co"
-    },
-    "type": "free",
-    "free": true,
-    "availableCountries": ["*"]
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

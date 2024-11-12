@@ -1,3 +1,3 @@
-import ContainerLayout from './Components/ContainerLayout'
+import ContainerLayout from './components/ContainerLayout'
 
 export default ContainerLayout

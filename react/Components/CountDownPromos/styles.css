@@ -1,0 +1,23 @@
+.countdown__container {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.countdown__box {
+    color: var(--secondary-color);
+    padding: 5px 14px;
+    background-color: var(--bg-soft-green );
+    border: 1px solid #D5EDE3;
+    border-radius: 6px;
+    width: 57px;
+}
+.countdown__value {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.countdown__label {
+    font-size: 9px;
+    font-weight: 700;
+    text-align: center;
+}

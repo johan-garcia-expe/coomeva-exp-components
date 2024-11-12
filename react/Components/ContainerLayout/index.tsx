@@ -39,7 +39,9 @@ ContainerLayout.schema = {
   properties: {
     active: {
       title: 'Activar o desactivar sección',
+      description: "switch sección",
       type: 'boolean',
+      default: true,
     },
   },
 }

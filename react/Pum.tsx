@@ -1,3 +1,3 @@
-import PUM from './Components/Pum'
+import PUM from './components/Pum'
 
 export default PUM

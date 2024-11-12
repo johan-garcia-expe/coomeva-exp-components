@@ -1,4 +1,8 @@
 {
+  "countdown-promos": {
+    "component": "CountDownPromos",
+    "composition": "children"
+  },
   "container-layout": {
     "component": "ContainerLayout",
     "composition": "children"

@@ -1,3 +1,3 @@
-import ResponsiveImage from './Components/ResponsiveImage'
+import ResponsiveImage from './components/ResponsiveImage'
 
 export default ResponsiveImage
