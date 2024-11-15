@@ -13,6 +13,7 @@ export type CardLayoutProps = {
 const CSS_HANDLES = [
   'cardLayout',
   'cardLayout__content',
+  'cardLayout__image_wrapper',
   'cardLayout__image',
   'cardLayout__secundary_image',
   'cardLayout__text',
@@ -26,18 +27,22 @@ const CardLayout = ({ image, secundaryImage, text, link }: CardLayoutProps) => {
       {link ? (
         <Link to={link} className={`${handles.cardLayout__content} db link`}>
           {image && (
-            <img
-              className={`${handles.cardLayout__image} db`}
-              src={image}
-              alt="Imagen principal de la tarjeta"
-            />
+            <div className={`${handles.cardLayout__image_wrapper}`}>
+              <img
+                className={`${handles.cardLayout__image} db`}
+                src={image}
+                alt="Imagen principal de la tarjeta"
+              />
+            </div>
           )}
           {secundaryImage && (
-            <img
-              className={`${handles.cardLayout__secundary_image} db`}
-              src={secundaryImage}
-              alt="Imagen segundaria de la tarjeta"
-            />
+            <div className={`${handles.cardLayout__image_wrapper}`}>
+              <img
+                className={`${handles.cardLayout__secundary_image} db`}
+                src={secundaryImage}
+                alt="Imagen segundaria de la tarjeta"
+              />
+            </div>
           )}
           {text && <RichText text={text} />}
         </Link>
