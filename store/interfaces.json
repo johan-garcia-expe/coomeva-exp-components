@@ -1,4 +1,8 @@
 {
+  "featured-banners-grid": {
+    "component": "FeaturedBannersGrid",
+    "composition": "children"
+  },
   "countdown-promos": {
     "component": "CountDownPromos",
     "composition": "children"
